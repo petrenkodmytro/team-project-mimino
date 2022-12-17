@@ -1,0 +1,349 @@
+.section-about-restaurant {
+  background-color: #fffdee;
+  // УДАЛИТЬ НЕ ЗАБЫТЬ
+
+  @media screen and (min-width: 320px) and(max-width:1023px) {
+    overflow: hidden;
+    height: 1191px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 1238px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 1275px;
+  }
+}
+.about-rest-grey-lain {
+  position: relative;
+}
+.about-restorant-lain-rgey {
+  height: 136%;
+  width: 1px;
+  background-color: rgba(186, 186, 186, 0.4);
+  position: absolute;
+  filter: blur(0.5px);
+
+  top: 0;
+  left: 140px;
+  @media screen and (min-width: 1024px) {
+    left: 278px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 338px;
+    height: 127%;
+  }
+  &::before {
+    content: ' ';
+    height: 100%;
+    width: 1px;
+    background-color: rgba(186, 186, 186, 0.4);
+    position: absolute;
+    top: 0;
+    left: 134px;
+    @media screen and (min-width: 1024px) {
+      left: 465px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 604px;
+    }
+  }
+  &::after {
+    content: ' ';
+    height: 74%;
+    width: 1px;
+    background-color: rgba(186, 186, 186, 0.4);
+    position: absolute;
+    top: 0;
+    left: 134px;
+    @media screen and (min-width: 1024px) {
+      left: 230px;
+      height: 100%;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 302px;
+    }
+  }
+}
+//  КОНТЕЙНЕРІ
+.container-slider-overflow-hidden {
+  @media screen and (min-width: 320px) and(max-width:1023px) {
+    overflow: hidden;
+  }
+
+  height: 100%;
+}
+.restaurant-wrap {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.restaurant-wrap:nth-child(even) {
+  @media screen and (min-width: 1024px) {
+    justify-content: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.restaurant-text-container {
+  @media screen and (min-width: 1024px) {
+    margin-right: 20px;
+  }
+}
+.restaurant-text-container-right {
+  @media screen and (min-width: 1024px) {
+    margin-right: 0px;
+    margin-left: 48px;
+    max-width: 312px;
+  }
+}
+.restaurant-wrap-accent {
+  display: flex;
+  align-items: center;
+}
+// ОФОРМЛЕНИЕ ТЕКСТА
+.restaurant__slogan {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b4b4b4;
+
+  padding-top: 16px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+.restaurant__name {
+  font-family: Film P3 Wide Light;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  /* identical to box height */
+
+  letter-spacing: 0.3em;
+
+  color: #494848;
+
+  margin-top: 12px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 69px;
+  }
+}
+
+.restaurant__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #5f5f5f;
+
+  margin-top: 12px;
+
+  // mobile
+
+  max-width: 256px;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 440px;
+  }
+}
+
+.accent_description {
+  color: #c79002;
+  margin-left: 15px;
+  @media screen and (min-width: 1280px) {
+    margin-top: -100px;
+  }
+}
+
+// КАРТИНКИ РЕСТОРАНА
+.restaurant-about_photo-first,
+.restaurant-about_photo-second {
+  @media screen and (min-width: 320px) {
+    height: 322px;
+  }
+  @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    height: 524px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 574px;
+  }
+}
+.restaurant-container-img-right-wrap {
+  margin-top: 28px;
+}
+.restaurant-container-img-right {
+  margin-left: auto;
+  z-index: 999;
+  position: relative;
+  @media screen and (max-width: 1023px) {
+    max-width: 244px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0px;
+  }
+}
+.restaurant-container-img-left {
+  margin-top: 16px;
+  // margin-left: auto;
+  @media screen and (max-width: 1023px) {
+    max-width: 200px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    position: relative;
+    top: -60px;
+    width: 350px;
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+  }
+}
+
+.restaurant-container-img-right-wrap {
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    top: -32px;
+    width: 400px;
+    margin-left: 5px;
+    z-index: 999;
+    margin-top: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 460px;
+    margin-left: 95px;
+  }
+}
+
+// СЛАЙДЕР
+
+.restaurant-about-slider {
+  &__wrapper {
+    position: relative;
+    left: 68px;
+    margin: 0;
+    margin-top: 25px;
+    @media screen and (min-width: 1024px) {
+      left: -7px;
+      margin-top: 0px;
+      top: -95px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: -200px;
+    }
+  }
+  &__container {
+    @media screen and (min-width: 1024px) {
+      width: 430px;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 530px;
+    }
+  }
+  & .slick-track {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    @media screen and (min-width: 1024px) {
+      gap: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 40px;
+    }
+  }
+  & .slick-list {
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 245px;
+    height: 245px;
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      width: 194px;
+    }
+  }
+  &__image {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.08);
+  }
+  &__img {
+    width: 245px;
+    height: 245px;
+  }
+  &__wrapper .slick-prev {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    z-index: 10;
+    width: 45px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  &__wrapper .slick-next {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0;
+    width: 45px;
+    height: 25px;
+    left: 55px;
+    border: none;
+    cursor: pointer;
+  }
+  &__arrow-left {
+    padding: 0;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  &__arrow-right {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__buttons {
+    position: absolute;
+    top: 265px;
+    right: 65px;
+    width: 108px;
+    @media screen and (max-width: 320px) {
+      left: 145px;
+    }
+    @media screen and (min-width: 1024px) {
+      right: -15px;
+      top: 218px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 260px;
+    }
+  }
+  // &__arrow-left-svg:hover,
+  // &__arrow-left-svg:focus,
+  // &__arrow-left-svg:active{
+    // fill: $modalBackgroundColor;
+  // }
+}
+.slick-prev {
+  left: -15px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: transparent !important;
+}
+
+// .restaurant-about-slider__arrow-left-svg:hover{
+//   fill: $modalBackgroundColor;
+// }

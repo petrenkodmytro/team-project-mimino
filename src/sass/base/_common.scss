@@ -1,0 +1,25 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background-color: #FFFDEE;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+a{
+  text-decoration: none;
+  font-style: normal;
+}
+
+

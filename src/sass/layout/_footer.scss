@@ -1,0 +1,193 @@
+.footer {
+  position: relative;
+  margin: auto;
+  max-width: 1280px;
+  background-color: $footerColor;
+}
+.footer-grad {
+  @include tablet {
+    width: 1024px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+      to right,
+      $footerColor 499px,
+      rgba(122, 122, 122, 0.4) 500px,
+      $footerColor 501px,
+      $footerColor 736px,
+      rgba(122, 122, 122, 0.4) 737px,
+      $footerColor 738px
+    );
+  }
+  @include desktop {
+    width: 1280px;
+    background-image: linear-gradient(
+      to right,
+      $footerColor 625px,
+      rgba(122, 122, 122, 0.4) 626px,
+      $footerColor 627px,
+      $footerColor 926px,
+      rgba(122, 122, 122, 0.4) 927px,
+      $footerColor 928px
+    );
+  }
+}
+.footer__container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  @include phone {
+    max-width: 414px;
+  }
+  @include tablet {
+    max-width: 1024px;
+  }
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+.footer__logo {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  color: $modalBackgroundColor;
+  font-family: 'Film P3 Wide Light';
+  transition: $transition;
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    // background: linear-gradient(145deg, #cacaca, #f0f0f0);
+      text-shadow: 30px 30px 60px #5a5a5a,
+        -30px -30px 60px #ffffff;
+  }
+  @include tablet {
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+.footer-menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include tablet {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@include tablet {
+  .footer-nav {
+    margin-right: 136px;
+  }
+}
+@include desktop {
+  .footer-nav {
+    margin-right: 199px;
+  }
+}
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer-nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $modalBackgroundColor;
+  transition: text-shadow $transition;
+  transition: text-shadow $transition;
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    text-shadow: 12px 12px 32px #666666,
+        -12px -12px 32px #ffffff;
+
+  }
+}
+
+.footer-socials__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 32px;
+
+  @include tablet {
+    gap: 12px;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+}
+@include tablet {
+  .footer-socials__item {
+    width: 144px;
+  }
+}
+.footer-socials__text {
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+}
+.footer-socials__link {
+  @include tablet {
+    color: $modalBackgroundColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid $modalBackgroundColor;
+    border-radius: 2px;
+    padding: 10px 12px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $modalBackgroundColor;
+    transition: border-color $transition;
+    transition: color $transition;
+    transition: text-shadow $transition;
+    transition: background $transition;
+    transition: box-shadow $transition;
+
+    &:hover,
+    &:focus {
+      border-color: $whiteColor;
+      color: $whiteColor;
+      // text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+      // box-shadow: inset 0px 2px 3px rgba(255, 255, 255, 0.8);
+
+
+      // background: linear-gradient(145deg, #cacaca, #f0f0f0);
+      //   box-shadow: 22px 22px 55px #6c6c6c,
+      //     -22px -22px 55px #ffffff;
+      background: linear-gradient(145deg, #8b8888, #bebebe);
+      box-shadow: 12px 12px 32px #666666,
+          -12px -12px 32px #ffffff;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.footer-socials__icon {
+  fill: #f3c653;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    fill: $whiteColor;
+  }
+}
+.footer-socials__link:hover .footer-socials__icon,
+.footer-socials__link:focus .footer-socials__icon {
+  fill: $whiteColor;
+}
